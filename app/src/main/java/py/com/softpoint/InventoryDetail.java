@@ -182,7 +182,7 @@ public class InventoryDetail extends AppCompatActivity implements View.OnKeyList
             @Override
             public void onResponse(Call<InventoryItems> call, Response<InventoryItems> response) {
 
-                if( response.isSuccessful() ){
+                if( response.code() == 200 ){
 
                     //itemsDetail.add(item);
                     //Log.i("ITEMS","Items  : "+itemsDetail.size());
